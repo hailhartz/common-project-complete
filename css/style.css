@@ -135,7 +135,7 @@ a.pets, a.recipes, a.travel {
 
 div.photo_gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     width: 95%;
     margin: 10px auto;
@@ -144,10 +144,6 @@ div.photo_gallery {
 #skip {
     position: absolute;
     left: -500px;
-}
-
-#skip:focus {
-    left: 20px;
 }
 
 ol {
@@ -167,7 +163,7 @@ img.main {
 
 div.additional_food {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 90%;
     margin: 10px auto;
 }
@@ -344,6 +340,20 @@ svg {
 
 @media only screen and (min-width: 600px) {
     /* for tablets */
+    #skip:focus {
+        left: 20px;
+    }
+
+    div.additional_food {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.photo_gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     nav {
         margin-top: 40px;
     }
