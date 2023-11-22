@@ -21,10 +21,16 @@ h1 {
     /* font-family: Arial, Helvetica, sans-serif; */
     text-align: center;
 }
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 h2 {
     font-size: 80px;
     /* font-family: Arial, Helvetica, sans-serif; */
     color: #555bb4;
+    font-family: 'Architects Daughter', sans-serif;
 }
 
 h3 {
@@ -35,10 +41,6 @@ h3 {
 
 h2, h3 {
     margin: 5px;
-}
-
-h1, h2, h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
@@ -327,6 +329,7 @@ canvas {
     margin: 5px auto;
     border: 5px solid lightseagreen;
     border-radius: 20px;
+    width: 90%;
 }
 
 div.draw {
@@ -442,6 +445,11 @@ svg {
         border: 10px dashed lightseagreen;
     }
 
+    div.text {
+        background-image: url('../images/ocean-wallpaper.jpg');
+        background-size: cover;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -508,18 +516,13 @@ svg {
         font-weight: bold;
     }
 
-    div.text {
+    /* div.text {
         background-image: url('../images/ocean-wallpaper.jpg');
         background-size: cover;
-    }
+    } */
 
     div.text h3 {
         color: #032D68;
-        ;
-    }
-
-    h2 {
-        font-family: 'Architects Daughter', sans-serif;
     }
 
     h1 {
@@ -557,6 +560,10 @@ svg {
         animation-name: stretch;
         animation-duration: 5s;
         max-height: 700px;
+    }
+
+    canvas {
+        width: 50%;
     }
 }
 
